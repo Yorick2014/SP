@@ -19,7 +19,7 @@ while true; do
 
   # Проверка наличия файлов в текущем каталоге
   files_count=$(ls -A | wc -l)
-  if [ $files_count -eq 0 ]; then
+  if [ $files_count -eq 1 ]; then
     echo "Ошибка: текущий каталог пуст"
     exit 1
   fi
